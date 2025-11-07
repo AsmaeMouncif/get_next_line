@@ -6,7 +6,7 @@
 /*   By: asmounci <asmounci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 11:07:10 by asmounci          #+#    #+#             */
-/*   Updated: 2025/11/07 11:56:17 by asmounci         ###   ########.fr       */
+/*   Updated: 2025/11/07 18:08:11 by asmounci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,13 +123,4 @@ char	*extract_rest(char *str)
 		rest[j++] = str[i++];
 	rest[j] = '\0';
 	return (free(str), rest);
-}
-
-#include <stdio.h>
-int main()
-{
-	char *s = "Hello";
-	char *x = ft_strchr(s, '\n');
-	printf("%s", x);
-	return 0;
 }
