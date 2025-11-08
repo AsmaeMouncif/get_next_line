@@ -6,7 +6,7 @@
 /*   By: asmounci <asmounci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 11:13:31 by asmounci          #+#    #+#             */
-/*   Updated: 2025/11/06 16:57:07 by asmounci         ###   ########.fr       */
+/*   Updated: 2025/11/08 20:19:56 by asmounci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,17 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+
+#ifndef BUFFER_SIZE
+#define BUFFER_SIZE 5
+#endif
 
 size_t	ft_strlen(const char *s);
 char	*ft_strchr(const char *s, int c);
-char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char *s1, char *s2);
 char	*extract_line(char *str);
+char	*extract_rest(char *str);
 
 #endif

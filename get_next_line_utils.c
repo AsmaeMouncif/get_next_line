@@ -6,7 +6,7 @@
 /*   By: asmounci <asmounci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 11:07:10 by asmounci          #+#    #+#             */
-/*   Updated: 2025/11/07 18:08:11 by asmounci         ###   ########.fr       */
+/*   Updated: 2025/11/08 21:23:24 by asmounci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,7 @@ char	*extract_line(char *str)
 	line[j] = '\0';
 	return (line);
 }
+
 
 char	*extract_rest(char *str)
 {
